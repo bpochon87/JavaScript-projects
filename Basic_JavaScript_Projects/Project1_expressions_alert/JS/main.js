@@ -4,6 +4,14 @@ var intro=("Good day, friend."); // Assigning variable 'intro' its string value.
 var family="The Pochons", mom="Dale Dee", dad="Ron", wife="Sara", husband="Brady", catSon="Suerte" // Assigning multiple variables
 var salutation="It is a pleasure meeting you."; // Assing variable 'salutation' its string value.
 
+
+function windowPop(x)
+{
+    window.alert("This is a cat on a couch.");
+}
+
+
+
 document.write(intro + salutation); // Concatenated variables 'intro' and 'salutation'.
 
 document.write(catSon);   // Displaying value of catSon.
