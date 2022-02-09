@@ -3,59 +3,83 @@
 
     <head>
         <meta charset="utf-8">
-        <script src="JS/main.js"></script>
         <title>Maths</title>
     </head>
 
     <body>
         <section>
+            <!-- Addition -->
             <p>Want to know what 2309572 + 235978235 is?</p>
                 <button onclick="sumFunc()">Click here!</button>
                 <br>
                 <strong><p id="sum"></p></strong>
                 <br>
 
+            <!-- Subtraction -->
             <p>Or would you rather know what 65432432089 - 65422306854 is?</p>
                 <button onclick="subFunc()">Click here!</button>
                 <br>
                 <strong><p id="sub"></p></strong>
                 <br>
 
+            <!-- Multiplication -->
             <p>Maybe you're a multiplication-person... How about 9574302987689 * 430289572390846?</p>
                 <button onclick="multFunc()">Click here!</button>
                 <br>
                 <strong><p id="mult"></p></strong>
                 <br>
 
+            <!-- Division -->
             <p>....Or a division person? Let's take 948573625 / 3.</p>
                 <button onclick="divFunc()">Click here!</button>
                 <strong><p id="div"></p></strong>
                 <br>
 
+            <!-- Multiple operators & operands -->
             <p>Maybe 500 + 500 * 333 / 111 - 200?</p>
                 <button onclick="randomFunc()">Click here!</button>
                 <br>
                 <strong><p id="random"></p></strong>
                 <br>
 
+            <!-- Modulus operator -->
             <p>Lastly, let's take a look at the remainder of 92718294 / 38201932.</p>
                 <button onclick="modFunc()">Click here!</button>
                 <br>
                 <strong><p id="mod"></p></strong>
+                <br>
         </section>
 
+        <!-- JS math object method -->
         <section>
             <p>Here is a JS math method:</p>
+            <strong><p>The square root of 144 is: </p><p id="sqrt"></p></strong>
             <br>
-            <strong><p id="squarert"></p></strong>
+        </section>
 
+        <!-- Randomly generated floating-point number through 1,000,000-->
+        <section>
+            <p>Do you like random numbers? Refresh your browser to generate a new, random, floating-point number.</p>
+            <strong><p id="random_1"></p></strong>
+            <br>
+        </section>
 
+        <!-- User-submitted number is incremented by one -->
+        <section>
+            <p>
+                <input style="width: 215px" type="text" id="addOne" placeholder="Enter a number to increment by one">
+                <br>
+                <button onclick="incFunc()">Submit</button>
+                
+                <br>
+                <strong><p>Your number incremented by one: <span id="increment"></span></p></strong>
+            </p>
         </section>
 
 
 
 
 
-
+    <script src="JS/main.js"></script>
     </body>
 </html>
