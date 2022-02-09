@@ -49,7 +49,15 @@ document.getElementById("random_1").innerHTML = Math.random()*1000000;
 // Function incrementing user-input number by one.
 function incFunc(x)
 {
-    var a = document.getElementById("addOne").value;
-    a++;
-    document.getElementById("increment").innerHTML = a;
+    var i = document.getElementById("addOne").value;
+    i++;
+    document.getElementById("increment").innerHTML = i;
+}
+
+// Function decrementing user input by one
+function decFunc(x)
+{
+    var d = document.getElementById("subOne").value;
+    d--;
+    document.getElementById("decrement").innerHTML = d
 }
