@@ -35,13 +35,14 @@ function countFunc()
 function greetFunc()
 {
     document.getElementById("greeting").innerHTML = introFunc();
-    introFunc()
+    function introFunc()
     {
-        var hi = "hello";
-        var bye = "goodbye";
+        var hi = "hello ";
+        var conjunction = "and ";
         function outroFunc()
         {
-            var full = "We said" + hi + "and" + bye;
+            var bye = "goodbye."
+            full = hi + conjunction + bye;
         }
         outroFunc();
         return full;
