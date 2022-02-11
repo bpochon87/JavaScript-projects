@@ -1,14 +1,15 @@
 // Intentional error visible in the console
 function errorFunc()
 {
-    var a = 20;
-    var b = 10;
-    console.log(a + b + c);
+    {
+        var a = 20;
+        var b = 10;
+        console.log(a + b + c);
+    }
+    errorFunc();
 }
-errorFunc();
-
 // Global variable declaration and initialization
-const x = 500;
+var x = 500;
 
 // Function utilizing global variable
 function globalFunc()
