@@ -7,22 +7,51 @@
     </head>
 
     <body>
+
         <!-- Global variable function test -->
         <p id="test01" onclick="globalFunc()">Click me.</p>
         <br>
         <br>
+
         <!-- Local variable function test -->
         <p id="test02" onclick="localFunc()">Click me.</p>
         <br>
         <br>
-        <!-- Date().getHours() method -->
-        <p id="date" onclick="getDate()">Click me.</p>
 
+        <!-- Date() method -->
+        <p id="test03" onclick="getDate()">Click me.</p>
+        <br>
+        <br>
 
+        <!-- TA sample if-else statement -->
+        <input type="text" id="userAge" placeholder="Please enter your age.">
+        <strong><p id="voteAble"></p></strong>
+        <button onclick="voteFunc()">Submit</button>
+        <br>
+        <br>
 
+        <!-- Brady sample if-else statement -->
+        <p>If you guess the correct number between 0 and 9, you win!</p>
+        <input style="width: 226px" type="text" id="guessInput" placeholder="Enter a number between 0 and 9 here.">
+        <strong><p id="guessOutput"></p></strong>
+        <button onclick="guessFunc()">Submit</button>
+        <br>
+        <br>
 
+        <!-- TA sample else-if statement -->
+        <p id="timeOfDay"></p>
+        <button onclick="timeFunc()">Click here for time of day</button>
+        <br>
+        <br>
 
-
+        <!-- Brady sample else-if statement -->
+        <p>Are you old? Let's find out!</p>
+        <input type="text" id="userOld" placeholder="Enter your age.">
+        <strong><p id="areOld"></p></strong>
+        <button onclick="oldFunc()">Submit</button>
+        <br>
+        <br>
+        
 
 
     <script src="JS/main.js"></script>
