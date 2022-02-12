@@ -42,20 +42,20 @@ function stringFunc()
     document.getElementById("toString").innerHTML = stringNumber;
 }
 
-// toPrecision() method example - NOT WORKING
+// toPrecision() method example
 function precisionFunc()
 {
-    var unchangedNumber = document.getElementById("userInput").value;
-    var preciseNumber = unchangedNumber.toPrecision(8);
-    document.getElementById("funcOutput").innerHTML = preciseNumber;
+    var num1 = 5235093246;
+    var num2 = num1.toPrecision(8);
+    document.getElementById("toPrecision").innerHTML = num2;
 }
 
-// toFixed() method example - NOT WORKING
+// toFixed() method example
 function fixedFunc()
 {
-    var unchangedFixed = document.getElementById("userFixed").value;
-    var changedFixed = unchangedFixed.toFixed(3);
-    document.getElementById("fixedOutput").innerHTML = changedFixed;
+    var num1 = 651583.156483;
+    var num2 = num1.toFixed(3);
+    document.getElementById("fixedOutput").innerHTML = num2;
 }
 
 // valueOf() method example
