@@ -68,14 +68,50 @@ function letFunc()
     }    
 }
 
-// Return statement
-function getRectArea()
+// Creating an object
+let sprinkler =
 {
-    var side01 = document.getElementById("num01");
-    var side02 = document.getElementById("num02");
-    if (side01 > 0 && side02 > 0)
+    make: "Rain Bird ",
+    model: " 5004 ",
+    type: " rotor ",
+    distance: " 20-60\'",
+    inletSize: " ¾\" ",
+    pattern: " adjustable ",
+    description : 
+    function()
     {
-        return side01 * side02 = document.getElementById("area");
+        return "The sprinkler is an " + sprinkler.pattern + sprinkler.make + sprinkler.model + sprinkler.type
+                + "with an inlet size of" + sprinkler.inletSize + "and a coverage area of" + sprinkler.distance + ".";
     }
-    return 0; // Return 0 means false; exits program due to error (in this case the conditional statement not being met)
+};
+document.getElementById("object").innerHTML = sprinkler.description();
+
+// Break statement utilized in function
+function breakFunc()
+{
+    var value = "";
+    for (i=0; i < 25; i++)
+    {
+        if (i === 19)
+        {
+            break;
+        }
+        value += i + "<br>";
+    }
+    document.getElementById("break").innerHTML = value;
+}
+
+// Continue statement utilized in function
+function continueFunc()
+{
+    var value = "";
+    for (i=0; i < 25; i++)
+    {
+        if (i === 19)
+        {
+            continue;
+        }
+        value += i + "<br>";
+    }
+    document.getElementById("continue").innerHTML = value;
 }
